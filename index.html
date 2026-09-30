@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tallboy: Pixel Art Buildings with Interiors (page preview)</title>
+<style>
+body{margin:0;background:#14121f;color:#f0ece2;font:16px/1.6 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px;background:#1e1e2a}
+img{display:block;max-width:100%;height:auto;margin:16px 0;image-rendering:pixelated}
+h2{color:#ffcc66;margin:32px 0 8px}
+h3{margin:20px 0 4px}
+a{color:#ffcc66}
+hr{border:0;border-top:1px solid #3a3850;margin:32px 0}
+code{background:#14121f;padding:1px 5px;border-radius:3px}
+</style>
+</head>
+<body>
+<main>
+<img src="gifs/demo-town-cinematic-orbit-day.gif" alt="Isometric pixel art town in daylight, the camera making a full turn around it">
+
+<p><strong>Tallboy is a 3D modeler that outputs pixel art.</strong> You build isometric buildings with boxes, extrude, loop cut and inset, paint the faces with your palette, and Tallboy draws the result at 1 texel = 1 pixel, with shading and an outline. It is free to play in your browser.</p>
+
+<hr>
+
+<h2>Isometric buildings, with rooms inside</h2>
+
+<img src="gifs/interiors-orbit.gif" alt="A glass office tower at night. The lit, furnished rooms behind the windows shift with parallax as the camera swings left and right">
+
+<p>Behind every window there is a room. Kitchens, offices, stairwells. The rooms move with parallax as the building turns, and they light up at night.</p>
+
+<ul>
+<li>Tools that work like Blender's: E to extrude, Ctrl+R to loop cut, G/R/S with axis locks.</li>
+<li>Paint on the faces with brush, bucket and line. Lospec palettes and ramps.</li>
+<li>Walls at 90 and 45 degrees. A px 1x view shows exactly what you will export.</li>
+<li>Room Studio: paint your own rooms and furniture. Dollhouse: cut the building floor by floor.</li>
+<li>Parts: awnings, balconies, signs, roof kits, stairs.</li>
+</ul>
+
+<h2>A building generator</h2>
+
+<img src="gifs/generator-reel.gif" alt="A reel of 16 generated buildings, one every half second: houses, towers, rowhouses, a fire station, a dome, a gas station and more">
+
+<p>Pick a building type, a facade style and a size, and get a finished building. This reel shows 16 generated types. There is also a template gallery, and every result is editable with the same tools as a hand-built one.</p>
+
+<h2>Streets and parks</h2>
+
+<img src="gifs/streets-cycle.gif" alt="A street in Demo Town from afternoon to night, with road markings, crosswalks, street lamps, trees and parked cars. The lamps and windows turn on as it gets dark">
+
+<p>Roads with markings and crosswalks, sidewalks, street lamps, trees, parked cars, and parks on the empty lots. Buildings line up along the street. The Demo opens on a small town, so you have something to look at on the first visit.</p>
+
+<h2>Real maps</h2>
+
+<img src="gifs/realmap-rise.gif" alt="A real neighborhood of Madrid from OpenStreetMap data: a flat top-down map that rises into 3D isometric buildings, turns slightly and returns to the plan">
+
+<p>Import a real place. The map starts as a flat plan, then the neighborhood rises into 3D buildings, streets and parcels. The example is a 300 x 300 m area of Madrid.</p>
+
+<p><em>Map data &copy; OpenStreetMap contributors, available under the ODbL.</em></p>
+
+<h2>Vehicles</h2>
+
+<img src="gifs/vehicles-parade.gif" alt="A parade of 24 different pixel art vehicles shown one after another: sedans, service vehicles, a Victorian carriage with horses, a kei car, a hover car and work trucks">
+
+<p>73 vehicle archetypes across the street styles: modern, service, Victorian, rural, retro, industrial and more. Headlights, brake lights and sirens. Vehicle Studio lets you edit one and place it. Parked cars, bus depots, fire and police stations get their own vehicles.</p>
+
+<img src="gifs/vehicles-services-night.gif" alt="A fire station at night with two fire trucks, a police car and an ambulance in front, all with flashing sirens">
+
+<p>A tram with rails and stops, car parks, and trees and plants that sway in the wind.</p>
+
+<h2>New in 1.18: export for your game</h2>
+
+<p>One Export panel (Alt+4). It lists every file before it writes anything.</p>
+
+<ul>
+<li>Baked sprites from 1, 4, 8 or 16 angles, with separate passes.</li>
+<li>2D light maps: normal, height, emissive, AO and material, aligned with the sprite.</li>
+<li>Atlases for TexturePacker, Godot 4, Unity, GameMaker and Aseprite.</li>
+<li>Palette files: .gpl, .pal, .hex, .ase.</li>
+<li>Batch export and style variants, with an index JSON that rebuilds each building from its seed.</li>
+<li>Whole scene: one big image, PNG layers, a Tiled world, GLB, GIFs and a time-lapse.</li>
+<li>GLB and OBJ with the room boxes fitted.</li>
+</ul>
+
+<h2>Day and night</h2>
+
+<p>A 24 h cycle. The sun and moon cross the sky, streetlights come on, and the rooms light up as it gets dark. The street GIF above shows it. After rain, the sun comes out.</p>
+
+<hr>
+
+<h2>Demo vs Full</h2>
+
+<h3>Demo (runs on this page)</h3>
+<ul>
+<li>Plays in your browser, nothing to install.</li>
+<li>Modeling, painting, the generator, the interiors, the town and the day and night cycle.</li>
+<li>Save and load <code>.tallboy</code> projects.</li>
+<li>Export PNG sprites from 1 or 4 angles.</li>
+<li>Vehicles in the modern, service and Victorian styles, and Vehicle Studio.</li>
+<li>Palette files, and the whole town as one image (with a watermark).</li>
+</ul>
+
+<h3>Full (Windows app)</h3>
+<ul>
+<li>Everything in the Demo, offline.</li>
+<li>8 and 16 angle bakes, night and shadow passes, light maps.</li>
+<li>Atlases and engine formats, batch export, style variants.</li>
+<li>Sprite sheets and <code>.aseprite</code> files, scene layers, Tiled, GLB and OBJ, time-lapse.</li>
+<li>Sirens and all vehicle styles.</li>
+<li>An MCP server, so an AI assistant can drive Tallboy.</li>
+<li>Every update is included.</li>
+</ul>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>Demo: a recent Chrome, Edge, Firefox or Safari with WebGL2. Mouse and keyboard recommended.</li>
+<li>Full: Windows 10 or 11, 64-bit.</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<p><strong>Is the output real pixel art?</strong><br>
+Yes. One texel is one pixel, no blur, no scaling. Your palette stays your palette.</p>
+
+<p><strong>Do I need to know Blender?</strong><br>
+No. There is a first building tutorial in the app. If you know Blender, the shortcuts will feel familiar.</p>
+
+<p><strong>Does my Demo work carry over to Full?</strong><br>
+Yes. Both open the same <code>.tallboy</code> files.</p>
+
+<p><strong>Mac or Linux?</strong><br>
+The Demo runs in any browser with WebGL2. Desktop builds for Mac and Linux come later.</p>
+
+<hr>
+
+<h2>Try it now</h2>
+
+<p>Open the Demo on this page, load the town and press Alt+4. It takes a minute, and there is nothing to install. If you want to export to your engine, tell me which format you need next.</p>
+
+<p>icemaan</p>
+</main>
+</body>
+</html>
